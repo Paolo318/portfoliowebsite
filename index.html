@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affordable Modern Web Design</title>
+    <title>Affordable Modern Web Design & Digital Support</title>
+    <!-- Tailwind CSS for modern utility styling -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Scroll Reveal Animation Library -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <style>
         body {
@@ -39,11 +42,13 @@
 </head>
 <body>
 
+    <!-- Moving Background Canvas -->
     <canvas id="bg-canvas"></canvas>
 
+    <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-extrabold tracking-tight text-white">PORTFOLIO<span class="text-blue-500">.</span></a>
+            <a href="#" class="text-sm font-extrabold tracking-widest text-white uppercase">PAOLO MARENA<span class="text-blue-500">.</span></a>
             <div class="space-x-8 text-sm font-medium text-gray-400">
                 <a href="#about" class="hover:text-white transition">About</a>
                 <a href="#services" class="hover:text-white transition">Services</a>
@@ -52,70 +57,110 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="reveal h-screen flex flex-col justify-center items-center px-6 text-center relative">
         <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl leading-tight">
             Websites Built For <br class="hidden md:block">
             <span id="typewriter" class="text-blue-500 typewriter-cursor"></span>
         </h1>
         <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-8 font-light">
-            High-performance, ultra-minimalist, and incredibly affordable web design for local creatives and small businesses.
+            High-performance, premium web design and digital management for local creatives, artists, and service businesses.
         </p>
         <a href="#contact" class="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition intensity shadow-lg">
-            Get Your Site
+            Let's Talk Shop
         </a>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="reveal max-w-4xl mx-auto py-32 px-6 text-center border-t border-white/5">
         <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">The Mission</h2>
         <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Premium look. Local budget.</h3>
         <p class="text-gray-400 text-lg leading-relaxed font-light">
-            You shouldn't need a corporate budget to have a beautiful digital storefront. I build blistering fast, modern, and striking single-page websites designed to capture your crowd, showcase your work, and get you noticed. 
+            You shouldn't need a massive corporate budget to have a striking digital storefront or a clean brand setup. I build blistering fast, modern single-page websites to showcase your work. Beyond code, I handle the digital backend tasks that keep your business sharp, organized, and visible to local clients.
         </p>
     </section>
 
+    <!-- Services Section -->
     <section id="services" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
         <div class="text-center mb-16 reveal">
-            <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">Services</h2>
-            <h3 class="text-3xl font-bold text-white">What You Get</h3>
+            <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">Capabilities</h2>
+            <h3 class="text-3xl font-bold text-white">Services & Digital Support</h3>
         </div>
         
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Web Design -->
             <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
                 <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">01</div>
-                <h4 class="text-xl font-semibold text-white mb-3">Modern Aesthetics</h4>
-                <p class="text-gray-400 text-sm font-light leading-relaxed">Clean layouts, curated typography, and bold contrast. No cluttered templates.</p>
+                <h4 class="text-xl font-semibold text-white mb-3">Modern Web Design</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Clean layouts, curated typography, and smooth micro-animations. High-impact, mobile-ready setups tailored perfectly to be viewed easily on phones and desktop screens.</p>
             </div>
+            
+            <!-- Card 2: Poster Design -->
             <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
                 <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">02</div>
-                <h4 class="text-xl font-semibold text-white mb-3">Blazing Performance</h4>
-                <p class="text-gray-400 text-sm font-light leading-relaxed">Lightweight code ensures your site loads instantly on mobile and desktop platforms.</p>
+                <h4 class="text-xl font-semibold text-white mb-3">Graphic & Poster Design</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Custom high-impact poster designs for events, gallery showings, gigs, or general business promo that accurately represent your brand's aesthetic.</p>
             </div>
+
+            <!-- Card 3: Google Maps & Business Profiles -->
             <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
                 <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">03</div>
-                <h4 class="text-xl font-semibold text-white mb-3">Fully Responsive</h4>
-                <p class="text-gray-400 text-sm font-light leading-relaxed">Perfect presentation across smartphones, tablets, and massive displays.</p>
+                <h4 class="text-xl font-semibold text-white mb-3">Google Business Profile Optimization</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Get found right where your clients look. I build, clean up, and optimize your official Google Maps profile so local traffic turns into active customers.</p>
+            </div>
+
+            <!-- Card 4: Social Media Management -->
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">04</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Social Media Maintenance</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Keeping your visual presence fresh on platforms like Instagram and Facebook. Consistent grids, properly formatted assets, and clean presentation.</p>
+            </div>
+
+            <!-- Card 5: Digital Asset Organization -->
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">05</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Digital File Organization</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Untangle cluttered cloud storage, messy image portfolios, or random business directories. Clean directory structures so you find exactly what you need instantly.</p>
+            </div>
+
+            <!-- Card 6: Custom Requests -->
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">06</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Custom Tasks & Requests</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Have a unique project or distinct digital need? Let me know the details. If it keeps your business agile and clean, I am more than happy to tackle it for you.</p>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="reveal max-w-4xl mx-auto py-32 px-6 text-center border-t border-white/5">
         <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">Connect</h2>
         <h3 class="text-4xl font-bold text-white mb-6">Let's Build Something Great</h3>
-        <p class="text-gray-400 text-lg mb-10 font-light">
-            Ready for a digital upgrade? Reach out via phone or text anytime to talk details.
+        <p class="text-gray-400 text-lg mb-10 font-light max-w-xl mx-auto">
+            Ready to give your digital workflow or storefront an upgrade? Drop me a text message anytime. I look forward to hearing from you soon!
         </p>
-        <div class="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center bg-white/[0.03] border border-white/10 px-8 py-6 rounded-2xl">
-            <div>
-                <span class="block text-xs uppercase text-gray-500 font-medium mb-1">Call or Text</span>
-                <a href="tel:2035859842" class="text-2xl font-bold text-white hover:text-blue-500 transition">203-585-9842</a>
+
+        <div class="inline-flex flex-col items-center bg-white/[0.03] border border-white/10 px-10 py-8 rounded-2xl max-w-sm w-full mx-auto">
+            <span class="text-xs uppercase text-gray-500 font-semibold tracking-wider mb-2">Text Me Anytime</span>
+            <a href="sms:+12035859842" class="text-2xl md:text-3xl font-extrabold text-white hover:text-blue-500 transition tracking-tight">203-585-9842</a>
+            
+            <div class="w-full h-[1px] bg-white/10 my-4"></div>
+            
+            <div class="flex items-center gap-2 text-xs text-gray-400 bg-white/[0.04] px-4 py-1.5 rounded-full border border-white/5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Average response time: <strong>Under 24 Hours</strong></span>
             </div>
         </div>
+
+        <p class="text-xs text-gray-500 mt-6 italic">I will get back to you as soon as possible.</p>
     </section>
 
+    <!-- Footer -->
     <footer class="py-8 text-center text-xs text-gray-600 border-t border-white/5">
-        <p>&copy; 2026 Web Design Co. All rights reserved.</p>
+        <p>Website created by Paolo Marena &copy; 2026. All rights reserved.</p>
     </footer>
 
+    <!-- Scripts for Animations -->
     <script>
         // 1. ScrollReveal Animations
         ScrollReveal().reveal('.reveal', {
@@ -129,7 +174,7 @@
         });
 
         // 2. Pure JS Micro-Typewriter Effect
-        const words = ["Local Businesses.", "Visual Artists.", "Photographers.", "Musicians."];
+        const words = ["Local Businesses.", "Florists.", "Landscapers.", "Cleaners.", "Visual Artists.", "Photographers.", "Musicians."];
         let i = 0;
         let timer;
 
