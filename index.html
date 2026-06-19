@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Modern Web Design</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+        /* Custom cursor styling for typewriter */
+        .typewriter-cursor::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        /* Canvas background styling */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight text-white">PORTFOLIO<span class="text-blue-500">.</span></a>
+            <div class="space-x-8 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="reveal h-screen flex flex-col justify-center items-center px-6 text-center relative">
+        <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl leading-tight">
+            Websites Built For <br class="hidden md:block">
+            <span id="typewriter" class="text-blue-500 typewriter-cursor"></span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-8 font-light">
+            High-performance, ultra-minimalist, and incredibly affordable web design for local creatives and small businesses.
+        </p>
+        <a href="#contact" class="bg-white text-black font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition intensity shadow-lg">
+            Get Your Site
+        </a>
+    </section>
+
+    <section id="about" class="reveal max-w-4xl mx-auto py-32 px-6 text-center border-t border-white/5">
+        <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">The Mission</h2>
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6">Premium look. Local budget.</h3>
+        <p class="text-gray-400 text-lg leading-relaxed font-light">
+            You shouldn't need a corporate budget to have a beautiful digital storefront. I build blistering fast, modern, and striking single-page websites designed to capture your crowd, showcase your work, and get you noticed. 
+        </p>
+    </section>
+
+    <section id="services" class="max-w-6xl mx-auto py-24 px-6 border-t border-white/5">
+        <div class="text-center mb-16 reveal">
+            <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">Services</h2>
+            <h3 class="text-3xl font-bold text-white">What You Get</h3>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">01</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Modern Aesthetics</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Clean layouts, curated typography, and bold contrast. No cluttered templates.</p>
+            </div>
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">02</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Blazing Performance</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Lightweight code ensures your site loads instantly on mobile and desktop platforms.</p>
+            </div>
+            <div class="reveal p-8 bg-white/[0.02] border border-white/10 rounded-2xl hover:border-blue-500/50 transition duration-300">
+                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center text-blue-500 font-bold mb-6">03</div>
+                <h4 class="text-xl font-semibold text-white mb-3">Fully Responsive</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Perfect presentation across smartphones, tablets, and massive displays.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal max-w-4xl mx-auto py-32 px-6 text-center border-t border-white/5">
+        <h2 class="text-xs uppercase tracking-widest text-blue-500 font-semibold mb-3">Connect</h2>
+        <h3 class="text-4xl font-bold text-white mb-6">Let's Build Something Great</h3>
+        <p class="text-gray-400 text-lg mb-10 font-light">
+            Ready for a digital upgrade? Reach out via phone or text anytime to talk details.
+        </p>
+        <div class="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 justify-center bg-white/[0.03] border border-white/10 px-8 py-6 rounded-2xl">
+            <div>
+                <span class="block text-xs uppercase text-gray-500 font-medium mb-1">Call or Text</span>
+                <a href="tel:2035859842" class="text-2xl font-bold text-white hover:text-blue-500 transition">203-585-9842</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-gray-600 border-t border-white/5">
+        <p>&copy; 2026 Web Design Co. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 1. ScrollReveal Animations
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            duration: 1000,
+            distance: '40px',
+            origin: 'bottom',
+            opacity: 0,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            mobile: true
+        });
+
+        // 2. Pure JS Micro-Typewriter Effect
+        const words = ["Local Businesses.", "Visual Artists.", "Photographers.", "Musicians."];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) {
+                    document.getElementById('typewriter').innerHTML += word.shift();
+                } else {
+                    setTimeout(deletingEffect, 2000);
+                    return false;
+                }
+                timer = setTimeout(loopTyping, 100);
+            };
+            loopTyping();
+        }
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('typewriter').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+                    setTimeout(typingEffect, 500);
+                    return false;
+                }
+                timer = setTimeout(loopDeleting, 60);
+            };
+            loopDeleting();
+        }
+
+        typingEffect();
+
+        // 3. Ultra-Light Ambient Particle Background
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 1.5 + 0.5;
+                this.speedX = Math.random() * 0.2 - 0.1;
+                this.speedY = Math.random() * 0.2 - 0.1;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            }
+            draw() {
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        for (let p = 0; p < 40; p++) {
+            particles.push(new Particle());
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>
